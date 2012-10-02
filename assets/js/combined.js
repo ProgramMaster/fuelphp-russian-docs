@@ -335,7 +335,7 @@ function setup()
 var panes = {};
 var pane_names = {
 	'main': 'FuelPHP',
-	'core': 'Core',
+	'core': 'Ядро',
 	'auth': 'Auth',
 	'email': 'Email',
 	'orm': 'ORM',
@@ -344,52 +344,51 @@ var pane_names = {
 };
 
 panes.main = {
-	"Basic": {
-		"Home":			"index.html",
-		"Requirements":	"requirements.html",
-		"License":		"license.html",
-		"Contribute":	"contribute.html",
-		"Credits":		"credits.html"
+	"Общее": {
+		"Главная":			"index.html",
+		"Требования":	"requirements.html",
+		"Лицензия":		"license.html",
+		"Соавторство":	"contribute.html",
+		"Авторы":		"credits.html"
 	},
-	"Installation": {
-		"Instructions":			"installation/instructions.html",
-		"Download":				"installation/download.html",
-		"Upgrade":				"installation/upgrade.html",
-		"Tutorials":			"installation/tutorials.html",
-		"Troubleshooting":		"installation/troubleshooting.html"
+	"Установка": {
+		"Инструкции":	"installation/instructions.html",
+		"Загрузка":		"installation/download.html",
+		"Учебники":	"installation/tutorials.html",
+		"Устранение проблем":		"installation/troubleshooting.html"
 	},
-	"General": {
-		"Classes": {
-			"Introduction":		"general/classes.html",
-			"Extending Core":	"general/extending_core.html"
+	"Основное": {
+		"Классы": {
+			"Введение":		"general/classes.html",
+			"Расширение ядра":	"general/extending_core.html"
 		},
-		"Coding Standards":	"general/coding_standards.html",
-		"Configuration":	"general/configuration.html",
-		"Constants":		"general/constants.html",
-		"Environments":		"general/environments.html",
+		"Плавила оформления кода":	"general/coding_standards.html",
+		"Настройка":	"general/configuration.html",
+		"Константы":		"general/constants.html",
+		"Переменные":		"general/environments.html",
 		"Model-View-Controller":	"general/mvc.html",
-		"Models":			"general/models.html",
-		"Views":			"general/views.html",
-		"ViewModels":		"general/viewmodels.html",
-		"Controllers": {
-			"Base" :		"general/controllers/base.html",
-			"Template":		"general/controllers/template.html",
-			"Rest":			"general/controllers/rest.html",
-			"Hybrid":		"general/controllers/hybrid.html"
+		"Модели":			"general/models.html",
+		"Виды":			"general/views.html",
+		"ВидМодель":		"general/viewmodels.html",
+		"Контроллеры": {
+			"Базовый" :		"general/controllers/base.html",
+			"Шаблон":		"general/controllers/template.html",
+			"REST":			"general/controllers/rest.html",
+			"Гибридный":		"general/controllers/hybrid.html"
 		},
-		"Routing":			"general/routing.html",
-		"Security":			"general/security.html",
-		"Modules":			"general/modules.html",
-		"Packages":			"general/packages.html",
-		"HMVC Requests":	"general/hmvc.html",
-		"Migrations":		"general/migrations.html",
-		"Tasks":			"general/tasks.html",
-		"Unit Testing":		"general/unit_testing.html",
-		"Error handling":	"general/error.html",
-		"Profiling":		"general/profiling.html",
+		"Маршрутизация":			"general/routing.html",
+		"Безопасность":			"general/security.html",
+		"Модули":			"general/modules.html",
+		"Пакеты":			"general/packages.html",
+		"HMVC запросы":	"general/hmvc.html",
+		"Миграция":		"general/migrations.html",
+		"Задачи":			"general/tasks.html",
+		"Тестирование кода":		"general/unit_testing.html",
+		"Обработка ошибок":	"general/error.html",
+		"Профилирование":		"general/profiling.html",
 	},
-	"Third party": {
-		"Introduction":		"vendor/intro.html",
+	"Третья сторона": {
+		"Введение":		"vendor/intro.html",
 		"htmLawed":			"vendor/htmlawed.html",
 		"Markdown":			"vendor/markdown.html",
 		"PHPQuickProfiler":	"vendor/phpquickprofiler.html",
@@ -399,34 +398,34 @@ panes.main = {
 };
 
 panes.core = {
-	"Classes": {
+	"Классы": {
 		"Agent": {
-			"Configuration":	"classes/agent/config.html",
-			"Usage":			"classes/agent/usage.html",
+			"Настройка":	"classes/agent/config.html",
+			"Использование":			"classes/agent/usage.html",
 		},
 		"Arr":			"classes/arr.html",
 		"Asset": {
-			"Configuration":	"classes/asset/config.html",
-			"Usage":			"classes/asset/usage.html",
-			"Advanced":			"classes/asset/advanced.html"
+			"Настройка":	"classes/asset/config.html",
+			"Использование":			"classes/asset/usage.html",
+			"Дополнительно":			"classes/asset/advanced.html"
 		},
 		"Autoloader":	"classes/autoloader.html",
 		"Cache": {
-			"Configuration":	"classes/cache/config.html",
-			"Usage":			"classes/cache/usage.html",
-			"Advanced":			"classes/cache/advanced.html"
+			"Настройка":	"classes/cache/config.html",
+			"Использование":			"classes/cache/usage.html",
+			"Дополнительно":			"classes/cache/advanced.html"
 		},
 		"Cli":			"classes/cli.html",
 		"Config":		"classes/config.html",
 		"Cookie":		"classes/cookie.html",
 		"Crypt":		"classes/crypt.html",
 		"Database": {
-			"Introduction":   	  "classes/database/introduction.html",
-			"Usage":          	  "classes/database/usage.html",
-			"DB class":       	  "classes/database/db.html",
-			"DBUtil class":   	  "classes/database/dbutil.html",
-			"Query Building":	{
-				"Introduction":			"classes/database/qb.html",
+			"Введение":   	  "classes/database/introduction.html",
+			"Использование":          	  "classes/database/usage.html",
+			"DB класс":       	  "classes/database/db.html",
+			"DBUtil класс":   	  "classes/database/dbutil.html",
+			"Построение запросов":	{
+				"Введение":			"classes/database/qb.html",
 				"Insert builder":	"classes/database/qb_insert.html",
 				"Select builder":	"classes/database/qb_select.html",
 				"Update builder":	"classes/database/qb_update.html",
@@ -441,10 +440,10 @@ panes.core = {
 		// "Exception":	"todo.html",
 		"Fieldset":		"classes/fieldset.html",
 		"File": {
-			"Introduction":	"classes/file/intro.html",
-			"Usage":		"classes/file/usage.html",
-			"Advanced":		"classes/file/advanced.html",
-			"Handlers":		"classes/file/handlers.html",
+			"Введение":	"classes/file/intro.html",
+			"Использование":		"classes/file/usage.html",
+			"Дополнительно":		"classes/file/advanced.html",
+			"Указатели":		"classes/file/handlers.html",
 		},
 		"Finder":		"classes/finder.html",
 		"Form":			"classes/form.html",
@@ -460,14 +459,14 @@ panes.core = {
 		"Markdown":		"classes/markdown.html",
 		"Migrate":		"classes/migrate.html",
 		"Model_Crud": {
-			"Introduction": "classes/model_crud/introduction.html",
-			"Methods": "classes/model_crud/methods.html"
-			//"Usage": "classes/model_crud/usage.html",
+			"Введение": "classes/model_crud/introduction.html",
+			"Методы": "classes/model_crud/methods.html"
+			//"Использование": "classes/model_crud/usage.html",
 		},
 		"Module":		"classes/module.html",
 		"Mongo_Db": {
-			"Introduction":	"classes/mongo/introduction.html",
-			"Methods":		"classes/mongo/methods.html"
+			"Введение":	"classes/mongo/introduction.html",
+			"Методы":		"classes/mongo/methods.html"
 		},
 		"Num":			"classes/num.html",
 		"Package":		"classes/package.html",
@@ -478,57 +477,57 @@ panes.core = {
 		"Response":		"classes/response.html",
 		"Router":		"classes/router.html",
 		"Security":		"classes/security.html",
-		"Session": {
-			"Configuration":	"classes/session/config.html",
-			"Usage":			"classes/session/usage.html",
-			"Advanced":			"classes/session/advanced.html"
+		"Сессии": {
+			"Настройка":	"classes/session/config.html",
+			"Использование":			"classes/session/usage.html",
+			"Дополнительно":			"classes/session/advanced.html"
 		},
 		"Str": 			"classes/str.html",
-		"Theme": {
-			"Introduction":	"classes/theme/introduction.html",
-			"Methods":	"classes/theme/methods.html",
-			"Advanced":	"classes/theme/advanced.html"
+		"Темы": {
+			"Введение":	"classes/theme/introduction.html",
+			"Методы":	"classes/theme/methods.html",
+			"Дополнительно":	"classes/theme/advanced.html"
 		},
 		// "Unzip":		"todo.html", // dont do this, needs to be cleaned up. forget it exists.
-		"Upload": {
-			"Configuration":	"classes/upload/config.html",
-			"Usage":			"classes/upload/usage.html"
+		"Загрузка": {
+			"Настройка":	"classes/upload/config.html",
+			"Использование":			"classes/upload/usage.html"
 		},
 		"Uri":			"classes/uri.html",
-		"Validation": {
-			"Introduction": "classes/validation/validation.html",
-			"Methods": "classes/validation/methods.html",
-			"Errors": "classes/validation/errors.html"
+		"Проверка": {
+			"Введение": "classes/validation/validation.html",
+			"Методы": "classes/validation/methods.html",
+			"Ошибки": "classes/validation/errors.html"
 		},
-		"View":			"classes/view.html"
+		"Вид":			"classes/view.html"
 	}
 };
 
 panes.oil = {
 	"Oil": {
-		"Introduction":		"packages/oil/intro.html",
-		"Generate":			"packages/oil/generate.html",
-		"Refine":			"packages/oil/refine.html",
-		"Package":			"packages/oil/package.html",
-//		"Test":				"packages/oil/test.html",
-		"Console":			"packages/oil/console.html"
+		"Введение":		"packages/oil/intro.html",
+		"Генерация":			"packages/oil/generate.html",
+		"Переопределение":			"packages/oil/refine.html",
+		"Пакет":			"packages/oil/package.html",
+//		"Тестирование":				"packages/oil/test.html",
+		"Консоль":			"packages/oil/console.html"
 	}
 };
 
 panes.auth = {
-	"Auth Package": {
-		"Introduction":		"packages/auth/intro.html",
-		"Usage":			"packages/auth/usage.html",
-		"Writing drivers":	"packages/auth/drivers.html",
-		"Driver types": {
-			"Login":		"packages/auth/types/login.html",
-			"Group":		"packages/auth/types/group.html",
+	"Пакет авторизации": {
+		"Введение":		"packages/auth/intro.html",
+		"Использование":			"packages/auth/usage.html",
+		"Драйвер записи":	"packages/auth/drivers.html",
+		"Типы драйверов": {
+			"Пользователь":		"packages/auth/types/login.html",
+			"Группа":		"packages/auth/types/group.html",
 			"ACL":			"packages/auth/types/acl.html"
 		},
 		"SimpleAuth": {
-			"Introduction":	"packages/auth/simpleauth/intro.html",
-			"Login":		"packages/auth/simpleauth/login.html",
-			"Groups":		"packages/auth/simpleauth/groups.html",
+			"Введение":	"packages/auth/simpleauth/intro.html",
+			"Пользователь":		"packages/auth/simpleauth/login.html",
+			"Граппы":		"packages/auth/simpleauth/groups.html",
 			"ACL":			"packages/auth/simpleauth/acl.html"
 		}
 	}
@@ -536,36 +535,36 @@ panes.auth = {
 
 
 panes.email = {
-	"Email Package": {
-		"Introduction":		"packages/email/introduction.html",
-		"Usage":			"packages/email/usage.html",
-		"Methods":			"packages/email/methods.html"
+	"Email пакет": {
+		"Введение":		"packages/email/introduction.html",
+		"Использование":			"packages/email/usage.html",
+		"Методы":			"packages/email/methods.html"
 	}
 };
 
 panes.orm = {
-	"Orm Package": {
-		"Introduction":		"packages/orm/intro.html",
-		"Creating Models":	"packages/orm/creating_models.html",
+	"Orm пакет": {
+		"Введение":		"packages/orm/intro.html",
+		"Создание моделей":	"packages/orm/creating_models.html",
 		"CRUD":				"packages/orm/crud.html",
-		"Relating Models": {
-			"Introduction":	"packages/orm/relations/intro.html",
-			"Belongs To":	"packages/orm/relations/belongs_to.html",
-			"Has One":		"packages/orm/relations/has_one.html",
-			"Has Many":		"packages/orm/relations/has_many.html",
-			"Many to Many":	"packages/orm/relations/many_many.html"
+		"Связывание моделей": {
+			"Введение":	"packages/orm/relations/intro.html",
+			"Принадлежит к":	"packages/orm/relations/belongs_to.html",
+			"Один к одному":		"packages/orm/relations/has_one.html",
+			"Один ко многим":		"packages/orm/relations/has_many.html",
+			"Многие ко многим":	"packages/orm/relations/many_many.html"
 		},
-		"Observers": {
-			"Introduction":			"packages/orm/observers/intro.html",
-			"Included observers":	"packages/orm/observers/included.html",
-			"Writing your own":		"packages/orm/observers/creating.html"
+		"Наблюдение": {
+			"Введение":			"packages/orm/observers/intro.html",
+			"Добавление наблюдения":	"packages/orm/observers/included.html",
+			"Создание своего класса наблюдения":		"packages/orm/observers/creating.html"
 		}
 	}
 };
 
 panes.parser = {
-	"Parser Package": {
-		"Introduction":		"packages/parser/intro.html"
+	"Parser пакет": {
+		"Введение":		"packages/parser/intro.html"
 	}
 };
 
